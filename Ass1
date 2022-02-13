@@ -1,0 +1,76 @@
+#program to generate supermarket bill
+rice=960
+sugar=50
+oilpackets=125
+teapowder=50
+salt=30
+spices=90
+name=input('enter customer name:')
+phno=int(input('enter customer phno:'))
+riceq=int(input('enter no of packs of rice'))
+sugarq=int(input('enter no of packs of sugar'))
+saltq=int(input('enter no of packs of salt'))
+oilq=int(input('enter no of packs of oil'))
+teapowderq=int(input('enter no of packs of teapowder'))
+spicestq=int(input('enter no of packs of spices'))
+bill=(rice*riceq)+(sugar*sugarq)+(salt+saltq)+(oilpackets*oilq)+(teapowder*teapowderq)+(spices*spicestq)
+if bill>5000:
+    dis=bill*10/100
+    tax=bill*10/100
+elif bill>3000:
+    dis=bill*8/100
+    tax=bill*10/100
+elif bill>2000:
+    dis=bill*5/100
+    tax=bill*18/100
+elif bill>1000:
+    dis=bill*3/1000
+    tax=bill*18/100
+marketbill=bill-dis+tax
+print('super marketbill=',marketbill)
+
+
+
+
+
+Output:
+
+
+enter customer name:
+
+Lavanya 
+
+enter customer phno:
+
+8074928538 
+
+enter no of packs of rice
+
+1 
+
+enter no of packs of sugar
+
+3 
+
+enter no of packs of salt
+
+1 
+
+enter no of packs of oil
+
+4 
+
+enter no of packs of teapowder
+
+2 
+
+enter no of packs of spices
+
+6 
+
+super marketbill= 2577.5299999999997 
+
+
+
+
+
